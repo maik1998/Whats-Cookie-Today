@@ -71,4 +71,12 @@ public class InventoryServiceImpl implements InventoryService {
 		InventoryRepository.delete(inventory);
 	}
 
+	public InventoryRepository getInventoryRepository() {
+		return InventoryRepository;
+	}
+
+	public void setInventoryRepository(InventoryRepository inventoryRepository) {
+		InventoryRepository = inventoryRepository;
+	}
+
 }

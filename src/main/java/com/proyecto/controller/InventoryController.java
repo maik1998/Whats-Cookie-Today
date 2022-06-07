@@ -101,5 +101,15 @@ public class InventoryController {
 		return ResponseEntity.ok(response);
 
 	}
+
+
+	public InventoryService getInventoryService() {
+		return inventoryService;
+	}
+
+
+	public void setInventoryService(InventoryService inventoryService) {
+		this.inventoryService = inventoryService;
+	}
 }
 

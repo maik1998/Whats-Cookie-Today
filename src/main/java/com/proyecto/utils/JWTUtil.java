@@ -93,4 +93,31 @@ public class JWTUtil {
 
         return claims.getId();
     }
+
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
+	}
+
+	public String getIssuer() {
+		return issuer;
+	}
+
+	public void setIssuer(String issuer) {
+		this.issuer = issuer;
+	}
+
+	public long getTtlMillis() {
+		return ttlMillis;
+	}
+
+	public void setTtlMillis(long ttlMillis) {
+		this.ttlMillis = ttlMillis;
+	}
+    
+    
+    
 }

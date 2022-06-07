@@ -90,5 +90,13 @@ public class RecipesController {
 		return ResponseEntity.ok(response);
 
 	}
+
+	public RecipesService getRecipesService() {
+		return recipesService;
+	}
+
+	public void setRecipesService(RecipesService recipesService) {
+		this.recipesService = recipesService;
+	}
 }
 

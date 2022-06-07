@@ -27,6 +27,10 @@ public class UserServiceImpl implements UserService {
 
 		this.entityManager = entityManager;
 	}
+	
+	public UserServiceImpl() {
+		entityManager=null;
+	}
 
 	@Autowired
 	private UserRepository userRepository;
@@ -98,6 +102,14 @@ public class UserServiceImpl implements UserService {
 			return lista.get(0);
 		}
 		return null;
+	}
+
+	public UserRepository getUserRepository() {
+		return userRepository;
+	}
+
+	public void setUserRepository(UserRepository userRepository) {
+		this.userRepository = userRepository;
 	}
 
 	/*@Override

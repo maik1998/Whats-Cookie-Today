@@ -17,7 +17,6 @@ import com.proyecto.model.User;
 import com.proyecto.repository.IngredientsRepository;
 import com.proyecto.service.IngredientsServiceImpl;
 
-import net.bytebuddy.agent.VirtualMachine.ForHotSpot.Connection.Response;
 
 class IngredientsControllerTest {
 
@@ -69,10 +68,10 @@ class IngredientsControllerTest {
 	@Test
 	void testDeleteIngredients() {
 		
-		ResponseEntity<Map<String, Boolean>> respuestaController;
-		respuestaController= ingController.deleteIngredients(2L);
+		ResponseEntity<Map<String, Boolean>> controllerResponse;
+		controllerResponse= ingController.deleteIngredients(2L);
 	
-		assertEquals(ResponseEntity.ok(200).getStatusCodeValue(),respuestaController.getStatusCodeValue());
+		assertEquals(200,controllerResponse.getStatusCodeValue());
 	}
 
 	@Test
@@ -86,10 +85,10 @@ class IngredientsControllerTest {
 		 ingExpected.setTheInventory(new Inventory());
 		 ingExpected.setTheUser(new User());
 		
-		ResponseEntity<Ingredients> respuestaController;
-		respuestaController= ingController.updateIngredients(2L, ingExpected);
+		ResponseEntity<Ingredients> controllerResponse;
+		controllerResponse= ingController.updateIngredients(2L, ingExpected);
 	
-		assertEquals(ResponseEntity.ok(200).getStatusCodeValue(),respuestaController.getStatusCodeValue());
+		assertEquals(200,controllerResponse.getStatusCodeValue());
 	}
 
 }

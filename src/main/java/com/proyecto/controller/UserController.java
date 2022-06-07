@@ -170,4 +170,20 @@ public class UserController {
 		return ResponseEntity.ok(response);
 
 	}
+
+	public UserService getUserService() {
+		return userService;
+	}
+
+	public void setUserService(UserService userService) {
+		this.userService = userService;
+	}
+
+	public JWTUtil getJwtUtil() {
+		return jwtUtil;
+	}
+
+	public void setJwtUtil(JWTUtil jwtUtil) {
+		this.jwtUtil = jwtUtil;
+	}
 }

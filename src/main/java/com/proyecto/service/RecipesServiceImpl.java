@@ -54,4 +54,12 @@ public class RecipesServiceImpl implements RecipesService {
 
 	}
 
+	public RecipesRepository getRecipesRepository() {
+		return RecipesRepository;
+	}
+
+	public void setRecipesRepository(RecipesRepository recipesRepository) {
+		RecipesRepository = recipesRepository;
+	}
+
 }
