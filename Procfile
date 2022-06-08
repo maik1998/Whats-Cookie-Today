@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/ProyectoColab-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar target/springboot-WCT-0.0.1-SNAPSHOT.jar
