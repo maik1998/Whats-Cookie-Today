@@ -94,11 +94,8 @@ public class UserController {
 	 * @return todos los usuarios
 	 */
 	@GetMapping("/listUser")
-	public List<User> getAllUser(@RequestHeader(value="Authorization")String Token) {
+	public List<User> getAllUser() {
 		
-		if(!validarToken(Token)) {
-			return null;
-		}
 		return (List<User>) userService.findAll();
 	}
 
