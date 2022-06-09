@@ -94,8 +94,7 @@ public class UserController {
 	 * @return todos los usuarios
 	 */
 	@GetMapping("/listUser")
-	public List<User> getAllUser() {
-		
+	public List<User> getAllUser() {	
 		return (List<User>) userService.findAll();
 	}
 
